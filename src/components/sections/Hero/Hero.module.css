@@ -1,0 +1,14 @@
+/* .hero {
+  
+} */
+
+.heroInfoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heroButtons {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  background-color: #374a67;
+  border-bottom: 1px solid var(--text-page);
+  z-index: 300;
+}
+
+.heroNameLink {
+  color: #b8d8d8;
+  font-family: "Tangerine", cursive;
+  text-shadow: 2px 2px 1px #0e1116;
+  transition: all 0.2s ease;
+}
+
+.heroNameLink:hover {
+  color: #a3cccc;
+  text-shadow: 0 0 3px #f8f4f1;
+}

@@ -1,0 +1,44 @@
+.themeBtn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #0e1116;
+  background-color: #2b3a50;
+  width: 80px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  z-index: 1;
+  padding: 4px;
+  box-shadow: 2px 2px 4px #0e1116;
+}
+
+.themeBtn svg {
+  position: relative;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.themeBtn span {
+  position: absolute;
+  top: 0;
+  height: 28px;
+  width: 28px;
+
+  border-radius: 14px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.themeBtn span.light {
+  left: 0;
+  background-color: #87ceeb;
+}
+
+.themeBtn span.dark {
+  transform: translateX(48px);
+  background-color: #041a40;
+}
