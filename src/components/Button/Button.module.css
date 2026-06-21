@@ -4,10 +4,10 @@
   color: #0e1116;
   width: auto;
   height: auto;
-  font-size: 0.8rem;
-  border-radius: 0.4rem;
+  font-size: 1rem;
+  border-radius: 0.6rem;
   transition: all 0.2s ease;
-  padding: 0.3rem 0.8rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
 }
 

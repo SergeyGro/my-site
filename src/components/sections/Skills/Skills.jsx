@@ -45,27 +45,27 @@ export default function Skills() {
       </div>
       <div className={styles.techIcons}>
         <div>
-          <FaHtml5 color="#E34F26" size={40} />
+          <FaHtml5 color="#E34F26" size={80} />
           <p>HTML5</p>
         </div>
         <div>
-          <FaCss3Alt color="#1572B6" size={40} />
+          <FaCss3Alt color="#1572B6" size={80} />
           <p>CSS3</p>
         </div>
         <div>
-          <FaJs color="#F7DF1E" size={40} />
+          <FaJs color="#F7DF1E" size={80} />
           <p>JavaScript</p>
         </div>
         <div>
-          <FaReact color="#61DAFB" size={40} />
+          <FaReact color="#61DAFB" size={80} />
           <p>React</p>
         </div>
         <div>
-          <FaGitAlt color="#F05032" size={40} />
+          <FaGitAlt color="#F05032" size={80} />
           <p>Git</p>
         </div>
         <div>
-          <FaFigma color="#F24E1E" size={40} />
+          <FaFigma color="#F24E1E" size={80} />
           <p>Figma</p>
         </div>
       </div>

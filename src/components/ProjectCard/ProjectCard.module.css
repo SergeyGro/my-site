@@ -1,0 +1,37 @@
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #374a67;
+  color: #f8f4f1;
+  padding: 1.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.projectCard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.projectCard ul li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.projectCard ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4caf50;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.projectCardLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}

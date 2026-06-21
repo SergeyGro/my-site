@@ -7,6 +7,7 @@ html {
   font-size: clamp(14px, 1.8vw, 18px);
 }
 
+/* Светлая тема */
 body.light {
   --bg-page: #f8f4f1;
   --text-page: #0e1116;
@@ -20,7 +21,7 @@ body.dark {
 
 body {
   background-color: var(--bg-page);
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -31,10 +32,7 @@ main {
 section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  border: 1px solid gray;
-  border-radius: 0.5rem;
-  padding: 1rem;
+  gap: 2.5rem;
   color: var(--text-page);
   transition: all 0.3s ease;
 }
@@ -47,5 +45,9 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 7rem 18rem 4rem 18rem;
+  padding: 7rem 2rem 4rem 2rem;
+}
+
+.highlightText {
+  color: #a44a3f;
 }

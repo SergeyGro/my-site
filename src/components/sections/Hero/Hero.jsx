@@ -4,7 +4,7 @@ import Button from "../../Button/Button";
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      <h1>Привет, я Сергей</h1>
+      <h1 className="highlightText">Привет, я Сергей</h1>
       <div className={styles.heroInfoBlock}>
         <p className="hero-subtitle">Начинающий фронтенд-разработчик</p>
         <p className="hero-description">

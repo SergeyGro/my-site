@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section className={styles.projects}>
       <h2>Проекты</h2>
-      <div className="projects-grid">
+      <div className={styles.projectsGrid}>
         <ProjectCard
           title="Simple Landing"
           description="Адаптивный лендинг по макету Figma. HTML, CSS, бургер-меню."
@@ -30,7 +30,7 @@ export default function Projects() {
             "CSS Modules",
           ]}
           githubLink="https://github.com/SergeyGro/blog-app"
-          demoLink="https://sergeygro.github.io/blog-app"
+          demoLink=""
         />
       </div>
     </section>
