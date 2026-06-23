@@ -1,0 +1,94 @@
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #32435d;
+  color: #f8f4f1;
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+  /* width: 100%; */
+  height: 70vh;
+}
+
+.slider ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.slider ul li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.slider ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #4caf50;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.sliderBtn {
+  position: absolute;
+  top: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: #a3cccc;
+  width: 80px;
+  height: 100%;
+  opacity: 0.3;
+  transition: all 0.1s ease;
+}
+
+.sliderBtn:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.sliderBtnLeft {
+  left: 0;
+}
+
+.sliderBtnRight {
+  right: 0;
+}
+
+.projectsMarker {
+  position: absolute;
+  bottom: 1rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.projectMarker {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  /* color: #a3cccc; */
+  width: 20px;
+  height: 20px;
+  background-color: var(--bg-page);
+  border-radius: 50%;
+  /* opacity: 0.3;
+  transition: all 0.1s ease; */
+}
+
+.currentProjectMarker {
+  background-color: var(--text-page) !important;
+}

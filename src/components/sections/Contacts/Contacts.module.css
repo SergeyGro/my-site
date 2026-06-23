@@ -1,6 +1,24 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 65%;
+}
+
 .contactLinks {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 3rem;
-  width: 100%;
+  width: 30%;
+}
+
+.contacts p span {
+  color: #a44a3f;
 }

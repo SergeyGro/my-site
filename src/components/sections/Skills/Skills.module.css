@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #374a67;
+  background-color: #32435d;
   padding: 2rem 1rem;
   border-radius: 0.3rem;
   width: clamp(6rem, 100%, 24rem);

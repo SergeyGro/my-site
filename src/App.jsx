@@ -11,8 +11,8 @@ export default function App() {
     <>
       <Header />
       <main>
+        <Hero />
         <div className="container">
-          <Hero />
           <About />
           <Projects />
           <Contacts />

@@ -1,11 +1,13 @@
 import styles from "./Projects.module.css";
-import ProjectCard from "../../ProjectCard/ProjectCard";
+// import ProjectCard from "../../ProjectCard/ProjectCard";
+import ProjectsSlider from "../../ProjectsSlider/ProjectsSlider";
 
 export default function Projects() {
   return (
     <section className={styles.projects}>
       <h2>Проекты</h2>
-      <div className={styles.projectsGrid}>
+      <ProjectsSlider />
+      {/* <div className={styles.projectsGrid}>
         <ProjectCard
           title="Simple Landing"
           description="Адаптивный лендинг по макету Figma. HTML, CSS, бургер-меню."
@@ -32,7 +34,7 @@ export default function Projects() {
           githubLink="https://github.com/SergeyGro/blog-app"
           demoLink=""
         />
-      </div>
+      </div> */}
     </section>
   );
 }

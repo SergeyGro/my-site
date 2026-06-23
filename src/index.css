@@ -35,6 +35,8 @@ section {
   gap: 2.5rem;
   color: var(--text-page);
   transition: all 0.3s ease;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 a {
@@ -44,8 +46,8 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 7rem 2rem 4rem 2rem;
+  gap: 7rem;
+  padding: 6rem 6rem 6rem 6rem;
 }
 
 .highlightText {

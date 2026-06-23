@@ -7,10 +7,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  /* width: 100%; */
-  padding: 0 2rem;
+  padding: 0 6rem;
   background-color: #374a67;
-  border-bottom: 1px solid var(--text-page);
   z-index: 300;
 }
 
