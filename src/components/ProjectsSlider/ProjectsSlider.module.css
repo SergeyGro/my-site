@@ -1,42 +1,87 @@
 .slider {
   position: relative;
   display: flex;
+  justify-content: space-between;
+  color: #f8f4f1;
+  border-radius: 1rem;
+  height: 60vh;
+  padding: 5rem;
+  background-color: #374a67;
+}
+
+.sliderContent {
+  position: relative;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-  background-color: #32435d;
-  color: #f8f4f1;
-  padding: 3rem 5rem;
-  border-radius: 1rem;
-  /* width: 100%; */
-  height: 70vh;
+  gap: 2rem;
+  width: 40%;
+  height: auto;
 }
 
-.slider ul {
+.sliderContent ul {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.slider ul li {
+.sliderContent ul li {
   position: relative;
   padding-left: 1.3rem;
   margin-bottom: 0.3rem;
 }
 
-.slider ul li::before {
+.sliderContent ul li::before {
   content: "✓";
   position: absolute;
   left: 0;
   top: 0;
   color: #4caf50;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+.sliderContentText {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sliderImgBlock {
+  width: 55%;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 1rem 0 1rem;
+  border-bottom: 1px solid #0e1116;
+  box-shadow: inset 6px 8px 8px #0e1116;
+  background-color: #32435d;
+  border-radius: 50% 50% 0 0;
+}
+
+.sliderImgMac {
+  width: 83%;
+  height: auto;
+  object-fit: contain;
+}
+
+.sliderImgMob {
+  width: 17%;
+  height: auto;
+  object-fit: contain;
 }
 
 .projectLinks {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+}
+
+.sliderImg {
+  width: 65%;
+  height: auto;
+  object-fit: contain;
 }
 
 .sliderBtn {
@@ -46,7 +91,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  color: #a3cccc;
+  color: #f8f4f1;
   width: 80px;
   height: 100%;
   opacity: 0.3;
@@ -60,19 +105,25 @@
 
 .sliderBtnLeft {
   left: 0;
+  border-radius: 1rem 0 0 1rem;
 }
 
 .sliderBtnRight {
   right: 0;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .projectsMarker {
   position: absolute;
   bottom: 1rem;
-  align-self: center;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   width: 20%;
+  /* background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 15px; */
 }
 
 .projectMarker {
@@ -80,15 +131,15 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  /* color: #a3cccc; */
   width: 20px;
   height: 20px;
-  background-color: var(--bg-page);
+  background-color: #0e1116;
   border-radius: 50%;
-  /* opacity: 0.3;
-  transition: all 0.1s ease; */
+  transition: all 0.2s ease;
+  opacity: 0.6;
 }
 
 .currentProjectMarker {
-  background-color: var(--text-page) !important;
+  background-color: #f8f4f1 !important;
+  opacity: 1 !important;
 }

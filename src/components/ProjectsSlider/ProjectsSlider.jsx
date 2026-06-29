@@ -2,6 +2,12 @@ import styles from "./ProjectsSlider.module.css";
 import { useState } from "react";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi2";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import landingImgMac from "../../assets/landing-mac.png";
+import lifeOrganizerImgMac from "../../assets/life-organizer-mac.png";
+import blogAppImgMac from "../../assets/blog-app-mac.png";
+import landingImgMob from "../../assets/landing-mob.png";
+import lifeOrganizerImgMob from "../../assets/life-organizer-mob.png";
+import blogAppImgMob from "../../assets/blog-app-mob.png";
 
 export default function ProjectsSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,6 +21,7 @@ export default function ProjectsSlider() {
       techStack: ["HTML5", "CSS3", "Flexbox", "Grid"],
       githubLink: "https://github.com/SergeyGro/simple-landing",
       demoLink: "https://sergeygro.github.io/simple-landing",
+      img: [landingImgMac, landingImgMob],
     },
     {
       id: 2,
@@ -24,6 +31,7 @@ export default function ProjectsSlider() {
       techStack: ["JavaScript", "CSS Grid", "LocalStorage", "History API"],
       githubLink: "https://github.com/SergeyGro/life-organizer",
       demoLink: "https://sergeygro.github.io/life-organizer",
+      img: [lifeOrganizerImgMac, lifeOrganizerImgMob],
     },
     {
       id: 3,
@@ -37,6 +45,7 @@ export default function ProjectsSlider() {
       ],
       githubLink: "https://github.com/SergeyGro/blog-app",
       demoLink: "",
+      img: [blogAppImgMac, blogAppImgMob],
     },
   ];
 
@@ -52,26 +61,42 @@ export default function ProjectsSlider() {
 
   return (
     <div className={styles.slider}>
-      <h3>{currentProject.title}</h3>
-      <p>{currentProject.description}</p>
-      <ul>
-        {currentProject.techStack.map((tech, index) => (
-          <li key={index}>{tech}</li>
-        ))}
-      </ul>
-      <div className={styles.projectLinks}>
-        <a href={currentProject.githubLink}>
-          <FaGithub size={35} color="#0E1116" />
-        </a>
-        <a href={currentProject.demoLink}>
-          {currentProject.demoLink ? (
-            <FaExternalLinkAlt size={33} color="#0E1116" />
-          ) : (
-            ""
-          )}
-        </a>
-      </div>
+      <div className={styles.sliderContent}>
+        <div className={styles.sliderContentText}>
+          <h3>{currentProject.title}</h3>
+          <p>{currentProject.description}</p>
+        </div>
 
+        <ul>
+          {currentProject.techStack.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
+        <div className={styles.projectLinks}>
+          <a href={currentProject.githubLink}>
+            <FaGithub size={45} color="#0E1116" />
+          </a>
+          <a href={currentProject.demoLink}>
+            {currentProject.demoLink ? (
+              <FaExternalLinkAlt size={43} color="#0E1116" />
+            ) : (
+              ""
+            )}
+          </a>
+        </div>
+      </div>
+      <div className={styles.sliderImgBlock}>
+        <img
+          src={currentProject.img[0]}
+          alt="imgMac"
+          className={styles.sliderImgMac}
+        />
+        <img
+          src={currentProject.img[1]}
+          alt="imgMob"
+          className={styles.sliderImgMob}
+        />
+      </div>
       <button
         onClick={prevSlide}
         className={`${styles.sliderBtn} ${styles.sliderBtnLeft}`}

@@ -1,11 +1,11 @@
 .btn {
   border: none;
   background-color: var(--bg-page);
-  color: var(--text-page);
+  color: #8b2635;
   width: auto;
   height: auto;
   font-size: 1.5rem;
-  border: 2px solid #32435d;
+  border: 2px solid #8b2635;
   border-radius: 0.6rem;
   transition: all 0.2s ease;
   padding: 0.6rem 1rem;
@@ -13,5 +13,6 @@
 }
 
 .btn:hover {
-  background-color: #32435d;
+  background-color: #8b2635;
+  color: var(--bg-page);
 }

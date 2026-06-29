@@ -8,7 +8,7 @@ header {
   align-items: center;
   height: 4rem;
   padding: 0 6rem;
-  background-color: #374a67;
+  background-color: var(--block-page);
   z-index: 300;
 }
 
