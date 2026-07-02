@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import Button from "../../Button/Button";
+// import Button from "../../Button/Button";
 import avatar from "../../../assets/ava.png";
 import { useTheme } from "../../../context/ThemeContext";
 import ParticleBackground from "../../ParticleBackground";
@@ -18,8 +18,14 @@ export default function Hero() {
           работающие SPA с роутингом, API и адаптивом.
         </p>
         <div className={styles.heroButtons}>
-          <Button>Смотреть проекты</Button>
-          <Button>Связаться</Button>
+          <a href="#projects" className={styles.btn}>
+            Смотреть проекты
+          </a>
+          <a href="#contacts" className={styles.btn}>
+            Связаться
+          </a>
+          {/* <Button>Смотреть проекты</Button> 
+          <Button>Связаться</Button> */}
         </div>
       </div>
       <img src={avatar} alt="bob" className={styles.avatarImg} />

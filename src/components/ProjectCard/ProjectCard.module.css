@@ -1,15 +1,16 @@
-.slider {
+.projectCard {
   position: relative;
   display: flex;
   justify-content: space-between;
-  color: #f8f4f1;
+  color: var(--text-page);
   border-radius: 1rem;
   height: 60vh;
   padding: 5rem;
-  background-color: #374a67;
+  /* border: 1px solid var(--text-page); */
+  background-color: rgba(50, 67, 93, 0.5);
 }
 
-.sliderContent {
+.projectCardContent {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
   height: auto;
 }
 
-.sliderContent ul {
+.projectCardContent ul {
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -28,63 +29,56 @@
   gap: 0.5rem;
 }
 
-.sliderContent ul li {
+.projectCardContent ul li {
   position: relative;
-  padding-left: 1.3rem;
+  padding-left: 2rem;
   margin-bottom: 0.3rem;
 }
 
-.sliderContent ul li::before {
+.projectCardContent ul li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -0.2rem;
   color: #4caf50;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.sliderContentText {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.sliderImgBlock {
+.projectCardImgBlock {
   width: 55%;
   display: flex;
   align-items: flex-end;
   padding: 1rem 1rem 0 1rem;
   border-bottom: 1px solid #0e1116;
   box-shadow: inset 6px 8px 8px #0e1116;
-  background-color: #32435d;
   border-radius: 50% 50% 0 0;
 }
 
-.sliderImgMac {
+.projectCardImgMac {
   width: 83%;
   height: auto;
   object-fit: contain;
 }
 
-.sliderImgMob {
+.projectCardImgMob {
   width: 17%;
   height: auto;
   object-fit: contain;
 }
 
-.projectLinks {
+.projectCardLinks {
   display: flex;
   justify-content: space-between;
 }
 
-.sliderImg {
+/* .projectCardImg {
   width: 65%;
   height: auto;
   object-fit: contain;
-}
+} */
 
-.sliderBtn {
+/* .sliderBtn {
   position: absolute;
   top: 0;
   background: none;
@@ -96,9 +90,9 @@
   height: 100%;
   opacity: 0.3;
   transition: all 0.1s ease;
-}
+} */
 
-.sliderBtn:hover {
+/* .sliderBtn:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.07);
 }
@@ -111,22 +105,22 @@
 .sliderBtnRight {
   right: 0;
   border-radius: 0 1rem 1rem 0;
-}
+} */
 
-.projectsMarker {
+/* .projectsMarker {
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
-  width: 20%;
-  /* background-color: rgba(0, 0, 0, 0.2);
+  width: 20%; */
+/* background-color: rgba(0, 0, 0, 0.2);
   padding: 5px;
   border-radius: 15px; */
-}
+/* } */
 
-.projectMarker {
+/* .projectMarker {
   background: none;
   border: none;
   cursor: pointer;
@@ -142,4 +136,4 @@
 .currentProjectMarker {
   background-color: #f8f4f1 !important;
   opacity: 1 !important;
-}
+} */

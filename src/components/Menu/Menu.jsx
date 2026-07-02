@@ -31,19 +31,19 @@ export default function Menu() {
           setIsActive(false);
         }}
       >
-        <a href="#">
+        <a href="#about">
           <i>
             <SlUser />
           </i>
           Обо мне
         </a>
-        <a href="#">
+        <a href="#projects">
           <i>
             <SlBookOpen />
           </i>
           Проекты
         </a>
-        <a href="#">
+        <a href="#contacts">
           <i>
             <SlEnvolope />
           </i>

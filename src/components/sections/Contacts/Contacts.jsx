@@ -3,9 +3,9 @@ import { FaGithub, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
 
 export default function Contacts() {
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id="contacts">
       <div className={styles.contactsInfo}>
-        <h2>Связаться со мной</h2>
+        <h2 className="highlightText">Связаться со мной</h2>
         <p>
           Если хочешь предложить работу, обсудить проект или просто поболтать{" "}
           <span>— пиши!</span>

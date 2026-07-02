@@ -11,12 +11,12 @@ export default function ParticleBackground({ color }) {
       id="tsparticles"
       init={particlesInit}
       options={{
-        fpsLimit: 60,
+        fpsLimit: 120,
         interactivity: {
           events: {
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "attract",
             },
           },
         },
@@ -28,7 +28,7 @@ export default function ParticleBackground({ color }) {
             color: color,
             distance: 150,
             enable: true,
-            opacity: 0.3,
+            opacity: 0.7,
             width: 0.5,
           },
           move: {
@@ -49,12 +49,14 @@ export default function ParticleBackground({ color }) {
             value: 0.5,
           },
           size: {
-            value: 2,
+            value: 3,
           },
         },
-        // ← прозрачный фон
         background: {
           color: "transparent",
+        },
+        fullScreen: {
+          enable: false,
         },
       }}
       style={{

@@ -5,6 +5,7 @@
 html {
   font-family: "Manrope", sans-serif;
   font-size: clamp(14px, 1.8vw, 18px);
+  scroll-behavior: smooth;
 }
 
 /* Светлая тема */
@@ -19,6 +20,10 @@ body.dark {
   --bg-page: #0e1116;
   --text-page: #f8f4f1;
   --block-page: #243042;
+}
+
+:root {
+  --swiper-theme-color: #b8d8d8 !important;
 }
 
 body {
@@ -38,6 +43,7 @@ section {
   color: var(--text-page);
   transition: all 0.3s ease;
   padding: 1rem;
+  scroll-margin-top: 5rem;
 }
 
 a {
@@ -47,7 +53,7 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  gap: 6rem;
   padding: 6rem 6rem 6rem 6rem;
 }
 

@@ -3,8 +3,8 @@ import Skills from "../Skills/Skills";
 
 export default function About() {
   return (
-    <section className={styles.aboutSection}>
-      <h2>Обо мне</h2>
+    <section className={styles.aboutSection} id="about">
+      <h2 className="highlightText">Обо мне</h2>
       <p>
         Меня зовут Сергей. Начал свой путь в IT с чистой вёрстки, затем перешёл
         к созданию полноценных SPA. Люблю, когда интерфейс не только красивый,
