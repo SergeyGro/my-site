@@ -23,3 +23,9 @@ header {
   color: #a3cccc;
   text-shadow: 0 0 3px #f8f4f1;
 }
+
+@media (max-width: 1370px) {
+  header {
+    padding: 0 4rem;
+  }
+}

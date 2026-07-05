@@ -33,16 +33,16 @@ body {
 }
 
 main {
-  min-height: calc(100vh - 5rem);
+  min-height: calc(100vh - 4rem);
 }
 
 section {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2.5rem; */
   color: var(--text-page);
   transition: all 0.3s ease;
-  padding: 1rem;
+  /* padding: 1rem; */
   scroll-margin-top: 5rem;
 }
 
@@ -59,4 +59,11 @@ a {
 
 .highlightText {
   color: #a44a3f;
+}
+
+@media (max-width: 1370px) {
+  .container {
+    gap: 4rem;
+    padding: 4rem 4rem 4rem 4rem;
+  }
 }

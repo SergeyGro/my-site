@@ -1,11 +1,12 @@
 .skills {
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
 }
 
 .skillsList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 2rem;
   color: #f8f4f1 !important;
@@ -53,7 +54,9 @@
 
 .techIcons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3.5rem;
   margin: 1rem 0;
 }
 
@@ -61,7 +64,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   align-items: center;
 }
 

@@ -6,7 +6,6 @@
   border-radius: 1rem;
   height: 60vh;
   padding: 5rem;
-  /* border: 1px solid var(--text-page); */
   background-color: rgba(50, 67, 93, 0.5);
 }
 
@@ -72,68 +71,12 @@
   justify-content: space-between;
 }
 
-/* .projectCardImg {
-  width: 65%;
-  height: auto;
-  object-fit: contain;
-} */
-
-/* .sliderBtn {
-  position: absolute;
-  top: 0;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  color: #f8f4f1;
-  width: 80px;
-  height: 100%;
-  opacity: 0.3;
-  transition: all 0.1s ease;
-} */
-
-/* .sliderBtn:hover {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.07);
+@media (max-width: 1370px) {
+  .projectCardContent {
+    width: 35%;
+  }
+  .projectCardImgBlock {
+    width: 60%;
+    height: 70%;
+  }
 }
-
-.sliderBtnLeft {
-  left: 0;
-  border-radius: 1rem 0 0 1rem;
-}
-
-.sliderBtnRight {
-  right: 0;
-  border-radius: 0 1rem 1rem 0;
-} */
-
-/* .projectsMarker {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 20%; */
-/* background-color: rgba(0, 0, 0, 0.2);
-  padding: 5px;
-  border-radius: 15px; */
-/* } */
-
-/* .projectMarker {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  background-color: #0e1116;
-  border-radius: 50%;
-  transition: all 0.2s ease;
-  opacity: 0.6;
-}
-
-.currentProjectMarker {
-  background-color: #f8f4f1 !important;
-  opacity: 1 !important;
-} */
