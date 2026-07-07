@@ -1,7 +1,6 @@
 import styles from "./Menu.module.css";
 import { SlMenu, SlUser, SlBookOpen, SlEnvolope } from "react-icons/sl";
 import { useState } from "react";
-// import Button from "../Button/Button";
 
 export default function Menu() {
   const [isActive, setIsActive] = useState(false);

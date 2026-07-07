@@ -22,3 +22,18 @@
 .contacts p span {
   color: #a44a3f;
 }
+
+@media (max-width: 1080px) {
+  .contacts {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .contactsInfo {
+    width: 100%;
+  }
+  .contactLinks {
+    justify-content: space-around;
+    width: 100%;
+    gap: 0;
+  }
+}
