@@ -1,16 +1,19 @@
-# React + Vite
+# 🚀 Sergey Groshev | Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Моё личное портфолио — сайт-визитка, созданный на **React** с использованием современных инструментов и подходов. Здесь я рассказываю о себе, показываю проекты и делюсь контактами.
 
-Currently, two official plugins are available:
+👉 **Сайт:** [sergeygro.github.io/my-site](https://sergeygro.github.io/my-site)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Стек технологий
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Технология | Что использовалось |
+|------------|---------------------|
+| **React** | Функциональные компоненты, хуки, контекст |
+| **Vite** | Быстрая сборка и горячая перезагрузка |
+| **CSS Modules** | Локальные стили для каждого компонента |
+| **Swiper** | Слайдер для проектов |
+| **React Icons** | Иконки для технологий и соцсетей |
+| **TSParticles** | Анимированный фон-сетка на главном экране |
+| **GitHub Pages** | Деплой и хостинг |
