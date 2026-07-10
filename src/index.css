@@ -22,10 +22,6 @@ body.dark {
   --block-page: #243042;
 }
 
-:root {
-  --swiper-theme-color: #b8d8d8 !important;
-}
-
 body {
   background-color: var(--bg-page);
   font-size: 1.7rem;

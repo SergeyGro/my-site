@@ -5,7 +5,6 @@
 .menuIcon {
   cursor: pointer;
   color: #b8d8d8;
-  transition: all 0.2s ease;
   position: relative;
   top: 0;
   left: 0;

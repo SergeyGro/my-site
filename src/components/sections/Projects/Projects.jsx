@@ -1,4 +1,3 @@
-import styles from "./Projects.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCube, Navigation, Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "../../ProjectCard/ProjectCard";
@@ -13,6 +12,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import styles from "./Projects.module.css";
 
 export default function Projects() {
   const projects = [
@@ -55,11 +55,14 @@ export default function Projects() {
     <section className={styles.projects} id="projects">
       <h2 className="highlightText">Проекты</h2>
       <Swiper
+        style={{
+          "--swiper-theme-color": "#b8d8d8",
+        }}
         modules={[EffectCube, Navigation, Pagination, Autoplay]}
         effect="cube"
         navigation={true}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 5000 }}
+        // autoplay={{ delay: 5000 }}
         speed={1100}
         loop={true}
         className={styles.mySwiper}
